@@ -2,25 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+  <link rel="stylesheet" href="CSS/style.css">
     <h1>Contact me</h1>
     <form class="" action="https://formcarry.com/s/4lUa8blspcE" method="post">
-          <label for="fullname">Name</label>
-          <input type="text" name="FullName" id="fullname" value="">
+      <fieldset>
+        <legend>Personal information</legend>
+          <table>
+            <tbody>
+              <tr>
+            <td> <label for="fullname">Name</label></td>
+            <td> <input type="text" name="FullName" id="fullname" value=""></td>
+          </tr>
+            <tr>
+          <td><label for="">Your Email</label></td>
+          <td><input type="email" id="email" name="Email"></td>
+        </tr>
+        <tr>
+          <td><label for="">Phone</label></td>
+           <td><input type="number" id="phone" />
+           </tr>
+           </tbody>
+          </table>
 
-          <br>
-          <label for="">Your Email</label>
-            <input type="email" id="email" name="Email">
-
-          <br>
-          <label for="">Phone</label>
+      </fieldset>
 
 
-            <input type="number" id="phone">
-            <br>
-  <p><input type="checkbox" name="Agree" value="agreed" checked="" required="">I would like to be contacted using information provided in this form</p>
-
-<br>
 <h5>Choose appointment time</h5>
 <label for="mon">Mon:</label>
 <input type="checkbox" name="Monday" value="Tick" id="mon">
@@ -67,6 +73,17 @@ To
         <br>
          <textarea name="message" rows="8" cols="80"></textarea>
          <br>
+         <p>Contact preference</p>
+         <label for="">Email</label>
+         <input type="radio" name="preference" value="email" checked>
+         <label for="">Phone</label>
+         <input type="radio" name="preference" value="phone">
+         <label for="">Teams</label>
+         <input type="radio" name="preference" value="teams">
+         <br>
+<p><input type="checkbox" name="Agree" value="agreed" checked="" required="">I would like to be contacted using information provided in this form</p>
+
+<br>
          <br>
             <hr>
             <input type="submit"  value="Submit">
