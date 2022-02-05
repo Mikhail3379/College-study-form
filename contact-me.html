@@ -2,15 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Contact me</title>
-  </head>
 
-  <body>
-  <p>Email :  <a href="mikhail.bakushev@outlook.com">mikhail.bakushev@outlook.com</a> </p>
-    <p>Phone: 07474371125</p>
-    <br>
-    <hr>
-    <h1>Contact me form</h1>
+    <h1>Contact me</h1>
     <form class="" action="https://formcarry.com/s/4lUa8blspcE" method="post">
           <label for="fullname">Name</label>
           <input type="text" name="FullName" id="fullname" value="">
@@ -29,28 +22,54 @@
 
 <br>
 <h5>Choose appointment time</h5>
-Mon:
-<input type="checkbox" name="Monday" value="Tick">
-Tue:
-<input type="checkbox" name="Tuesday" value="Tick">
-Wed:
-<input type="checkbox" name="Wednesday" value="Tick">
-Thu:
-<input type="checkbox" name="Thursday" value="Tick">
-Fri:
-<input type="checkbox" name="Friday" value="Tick">
+<label for="mon">Mon:</label>
+<input type="checkbox" name="Monday" value="Tick" id="mon">
+&nbsp&nbsp&nbsp&nbsp
+<label for="tue">Tue:</label>
+<input type="checkbox" name="Tuesday" value="Tick" id="tue">
+&nbsp&nbsp&nbsp&nbsp
+<label for="wed">Wed:</label>
+<input type="checkbox" name="Wednesday" value="Tick" id="wed">
+&nbsp&nbsp&nbsp&nbsp
+<label for="thu">Thu:</label>
+<input type="checkbox" name="Thursday" value="Tick" id="thu">
+&nbsp&nbsp&nbsp&nbsp
+<label for="fri">Fri:</label>
+<input type="checkbox" name="Friday" value="Tick" id="fri">
+<br>
 <br>
 From
 <input type="time" name="From">
 <br>
+<br>
 To
 <input type="time" name="To">
+<br>
+<br>
+<h5>Services</h5>
+<!-- <input list="service-options" name="Service" placeholder="Choose from below">
+<datalist  id="service-options">
+  <option value="Course consultancy"></option>
+  <option value="IT support"></option>
+  <option value="Bootcamp"></option>
 
+</datalist> -->
+<select class="" name="service">
+  <option value="HND">Higher National Diploma</option>
+  <option value="IT support">IT support</option>
+  <option value="Bootcamp">Bootcamp course</option>
+
+</select>
+<br>
+<br>
         <label>Your message</label>
         <br>
-         <textarea name="message" rows="8" cols="80">Your message</textarea>
+        <br>
+         <textarea name="message" rows="8" cols="80"></textarea>
+         <br>
+         <br>
             <hr>
-            <input type="submit"  id="btn" value="Submit">
+            <input type="submit"  value="Submit">
 
 
     </form>
